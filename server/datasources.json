@@ -1,0 +1,12 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "twilio": {
+    "name": "twilio",
+    "connector": "loopback-connector-twilio",
+    "accountSid": "AC2be67b84ae268bde05ebe5ece68897b4",
+    "authToken": "b66604e95ce2d8539d932aede565793c"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "otp",
+  "plural": "otp",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "isd": {
+      "type": "number",
+      "required": false
+    },
+    "phone": {
+      "type": "number",
+      "required": true
+    },
+    "code": {
+      "type": "number",
+      "required": true
+    },
+    "itemType": {
+      "type": "string",
+      "required": true
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "expiresAt": {
+      "type": "date",
+      "required": true
+    },
+    "isOverriden": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
