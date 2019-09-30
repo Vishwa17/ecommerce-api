@@ -64,7 +64,14 @@
     }
   },
   "validations": [],
+
+   
   "relations": {
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customerId"
+    },
     "items": {
       "type": "hasMany",
       "model": "OrderItem",
@@ -86,6 +93,26 @@
       "foreignKey": "productId"
     }
   },
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "DENY"
+    },
+  
+    {
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW"
+    
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    
+    }
+  ],
   "methods": {}
 }
