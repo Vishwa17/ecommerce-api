@@ -17,6 +17,9 @@
         "dataLength": 64
       }
     },
+    "vendorId": {
+      "type": "string"
+    },
     "pricing": {
       "type": "number",
       "required": true,
